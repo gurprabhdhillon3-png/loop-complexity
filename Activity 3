@@ -1,0 +1,19 @@
+n=5
+steps_constant= 1
+result =n*n
+print("Constant time:o(1)")
+print("Result:", result)
+print("Steps:", steps_constant)
+
+steps_linear= 0
+for i in range(n):
+    steps_linear += 1
+print("Linear time: o(n)")
+print("Steps:", steps_linear)
+
+steps_quad= 0
+for i in range(n):
+    for j in range(n):
+        steps_quad += 1
+print("Quadratic time:o(n^2)")
+print("Steps:", steps_quad)
